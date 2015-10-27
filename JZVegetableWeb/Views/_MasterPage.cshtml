@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="/css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/zerogrid.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/responsive.css" type="text/css" media="all">
+    <script type="text/javascript" src="/js/jquery-1.6.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/js/tms-0.3.js"></script>
+    <script type="text/javascript" src="/js/tms_presets.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/css3-mediaqueries.js"></script>
+</head>
+<body>
+    <div class="body1">
+        <div class="main zerogrid">
+            <!--header -->
+            <header>
+                <div class="wrapper">
+                    <h1><a href="index.html" id="logo">Agrox Agriculture Company</a></h1>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Products", "Products", "Home")</li>
+                            <li>@Html.ActionLink("Technology", "Technology", "Home")</li>
+                            <li>@Html.ActionLink("Pricing", "Pricing", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!-- / header -->
+            <!-- content -->
+            <article id="content">
+                <div class="wrapper">
+                    <h2>Useful Info</h2>
+                    <div class="wrapper">
+                        <section class="col-1-3">
+                            <div class="wrap-col">
+                                <span class="dropcap1"><span>01</span></span>
+                                <div class="cols">
+                                    <p class="pad_bot1 color1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                                    <p class="pad_bot2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                                    <a href="#" class="link1">Read More</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col-1-3">
+                            <div class="wrap-col">
+                                <span class="dropcap1"><span class="color1">02</span></span>
+                                <div class="cols">
+                                    <p class="pad_bot1 color1">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore.</p>
+                                    <p class="pad_bot2">Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime.</p>
+                                    <a href="#" class="link1">Read More</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col-1-3">
+                            <div class="wrap-col">
+                                <span class="dropcap1"><span class="color2">03</span></span>
+                                <div class="cols">
+                                    <p class="pad_bot1 color1">Quis autem vel eum iure repre- henderit qui in ea voluptate velit esse quam molestiae.</p>
+                                    <p class="pad_bot2">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus.</p>
+                                    <a href="#" class="link1">Read More</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="body2">
+        @RenderBody()
+    </div>
+    <div class="main zerogrid">
+        <!-- footer -->
+        <footer>
+            <div class="wrapper">
+                <section class="col-1-2">
+                    <div class="wrap-col">
+                        <div class="wrapper">
+                            <section class="col-1-2">
+                                <h3>Follow Us </h3>
+                                <ul id="icons">
+                                    <li><a href="#"><img src="images/icon1.jpg" alt=""><span>Facebook</span></a></li>
+                                    <li><a href="#"><img src="images/icon2.jpg" alt=""><span>Twitter</span></a></li>
+                                    <li><a href="#"><img src="images/icon3.jpg" alt=""><span>Linked In</span></a></li>
+                                </ul>
+                            </section>
+                            <section class="col-1-2">
+                                <h3>Why Us </h3>
+                                <ul id="why_us">
+                                    <li><a href="#">Sed perspiciatis unde </a></li>
+                                    <li><a href="#">Omnis natus error</a></li>
+                                    <li><a href="#">Voluptatem accusantium </a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div id="footer_link">
+                            Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-1-2">
+                    <div class="wrap-col">
+                        <h3>Email Us</h3>
+                        <form id="ContactForm">
+                            <div>
+                                <div class="wrapper">
+                                    <span>Your Name:</span>
+                                    <div class="bg"><input type="text" class="input"></div>
+                                </div>
+                                <div class="wrapper">
+                                    <span>Your E-mail:</span>
+                                    <div class="bg"><input type="text" class="input"></div>
+                                </div>
+                                <div class="textarea_box">
+                                    <span>Your Message:</span>
+                                    <div class="bg2"><textarea name="textarea" cols="1" rows="1"></textarea></div>
+                                </div>
+                                <a href="#" onclick="document.getElementById('ContactForm').submit()">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <!-- {%FOOTER_LINK} -->
+        </footer>
+        <!-- / footer -->
+    </div>
+    <div style="display:none">
+        <script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script>
+    </div>
+</body>
+</html>
